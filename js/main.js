@@ -19,8 +19,8 @@ function main() {
       //]]>
       
    // Contact form toggle hide/show
-    $(document).ready(function(){
-      $("#show").click(function(){
+    $(document).ready(function() {
+      $("#show").click(function() {
         $("#contact").slideToggle("slow,swing");
       });
     });
@@ -28,9 +28,14 @@ function main() {
     // Wow animation
       new WOW().init();
 
+    // Header carousel slider
+      $('#banner').carousel({
+        interval: 5000
+      });
+    
     // Header/Vision carousel slider
-      $('.carousel').carousel({
-        interval: 3000
+      $('#vision').carousel({
+        interval: 15000
       });
 
 
