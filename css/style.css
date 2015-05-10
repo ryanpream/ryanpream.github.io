@@ -749,7 +749,7 @@ a.btn.pull-right:hover {
     position: relative;
     display: block;
     min-height: 100%;
-    opacity: 0.8;
+    opacity: 1;
 }
 .grid figure figcaption {
     padding: 2em;
@@ -853,9 +853,9 @@ figure.effect-portfolio p {
     transition: opacity 0.35s, transform 0.35s;
 }
 figure.effect-portfolio:hover img {
-    opacity: 0.7;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    opacity: 1;
+/*     -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0); */
 }
 figure.effect-portfolio:hover figcaption::before,
 figure.effect-portfolio:hover figcaption::after {
