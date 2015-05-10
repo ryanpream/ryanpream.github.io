@@ -34,8 +34,8 @@ function main() {
       });
     
     // Header/Vision carousel slider
-      $('#vision').carousel({
-        interval: 15000
+      $('#carousel-vision').carousel({
+        interval: 30000
       });
 
 
