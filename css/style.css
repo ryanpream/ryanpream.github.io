@@ -429,8 +429,8 @@ hr {
     overflow: hidden;
     margin-left: 0.2em;
     margin-right: 0.2em;
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
     text-align: center;
     cursor: pointer;
 }
