@@ -1,23 +1,8 @@
-// Hello.
-//
-// This is The Scripts used for Awesome Photography/Portfolio Template
-//
-//
-
 function main() {
 
 (function () {
    'use strict';
 
-   //Page Loader
-        //<![CDATA[
-      //$(window).load(function() { // makes sure the whole site is loaded
-        //$('#status').fadeOut(); // will first fade out the loading animation
-        //$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        //$('body').delay(350).css({'overflow':'visible'});
-      //});
-      //]]>
-      
    // Contact form toggle hide/show
     $(document).ready(function() {
       $("#show").click(function() {
@@ -55,59 +40,55 @@ function main() {
           target: '.navbar-fixed-top' ,
           offset: 75
       });
-
-
-    
-
 }());
 
 }
 main();
 
 
-			$(document).ready(function ($) {
+$(document).ready(function ($) {
 
-				// delegate calls to data-toggle="lightbox"
-				$(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
-					event.preventDefault();
-					return $(this).ekkoLightbox({
-						onShown: function() {
-							if (window.console) {
-								return console.log('Checking our the events huh?');
-							}
-						},
-						onNavigate: function(direction, itemIndex) {
-							if (window.console) {
-								return console.log('Navigating '+direction+'. Current item: '+itemIndex);
-							}
-						}
-					});
-				});
+    // delegate calls to data-toggle="lightbox"
+    $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+        event.preventDefault();
+        return $(this).ekkoLightbox({
+            onShown: function() {
+                if (window.console) {
+                    return console.log('Checking our the events huh?');
+                }
+            },
+            onNavigate: function(direction, itemIndex) {
+                if (window.console) {
+                    return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                }
+            }
+        });
+    });
 
-				//Programatically call
-				$('#open-image').click(function (e) {
-					e.preventDefault();
-					$(this).ekkoLightbox();
-				});
-				$('#open-youtube').click(function (e) {
-					e.preventDefault();
-					$(this).ekkoLightbox();
-				});
+    //Programatically call
+    $('#open-image').click(function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    $('#open-youtube').click(function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+    });
 
-				$(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
-					event.preventDefault();
-					return $(this).ekkoLightbox({
-						onShown: function() {
-							var a = this.modal_content.find('.modal-footer a');
-							if(a.length > 0) {
-								a.click(function(e) {
-									e.preventDefault();
-									this.navigateTo(2);
-								}.bind(this));
-							}
-						}
-					});
-				});
+    $(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
+        event.preventDefault();
+        return $(this).ekkoLightbox({
+            onShown: function() {
+                var a = this.modal_content.find('.modal-footer a');
+                if(a.length > 0) {
+                    a.click(function(e) {
+                        e.preventDefault();
+                        this.navigateTo(2);
+                    }.bind(this));
+                }
+            }
+        });
+    });
 
-			});
+});
 
