@@ -1,11 +1,8 @@
 
-
 function main() {
 
 (function () {
    'use strict';
-
-
    // Contact form toggle hide/show
     $(document).ready(function() {
       $("#show").click(function() {
@@ -18,7 +15,7 @@ function main() {
 
     // Header carousel slider
       $('#banner').carousel({
-        interval: 50000
+        interval: 7000
       });
     
     // Header/Vision carousel slider
@@ -92,6 +89,35 @@ $(document).ready(function ($) {
             }
         });
     });
-
 });
+
+
+var arrayImages = new Array(
+    "img/banner/RP-003-banner-1600px.jpg",
+    "img/banner/RP-004-banner-1600px.jpg",
+    "img/banner/RP-005-banner-1600px.jpg",
+    "img/banner/RP-006-banner-1600px.jpg",
+    "img/banner/RP-007-banner-1600px.jpg",
+    "img/banner/RP-008-banner-1600px.jpg",
+    "img/banner/RP-009-banner-1600px.jpg",
+    "img/banner/RP-002-banner-1600px.jpg",
+    "img/banner/RP-001-banner-1600px.jpg"
+);
+
+$.qPreloadImages({
+    images: arrayImages,
+    complete: function() {
+
+        console.log("done");
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+
+        $.each( arrayImages, function(index,value){
+            var img = $('<img class="dynamic">');
+            img.attr('src', value);
+            img.prependTo('.thumbnail').hide().fadeIn(2000);
+        }); // each END
+    }
+ });
 
