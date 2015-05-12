@@ -593,12 +593,10 @@ figure.effect-portfolio:hover img {
 #subscribe {
     background-color: #000000;
     height: auto;
-    min-height: 150px;
-    max-height: 100px;
     color: #ffffff;
-    padding-top: 35px;
-    padding-bottom: 45px;
-    margin-top: -2px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 0px;
 }
 #subscribe p {
     display: inline-block;
