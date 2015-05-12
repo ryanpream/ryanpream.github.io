@@ -429,7 +429,7 @@ hr {
     overflow: hidden;
     margin-left: 0.2em;
     margin-right: 0.2em;
-    /* width: 33%; */
+    width: 400px;
     height: 400px;
     text-align: center;
     cursor: pointer;
@@ -483,8 +483,8 @@ hr {
 figure.effect-portfolio { background: rgba(0, 0, 0, 1) }
 figure.effect-portfolio img { 
     min-width: 100%;
-    height: -webkit-calc(100% + 40px);
-    height: calc(100% + 40px);
+    height: -webkit-calc(100% + 50px);
+    height: calc(100% + 50px);
 }
 figure.effect-portfolio figcaption { padding: 3em }
 figure.effect-portfolio figcaption::before,
@@ -509,7 +509,7 @@ figure.effect-portfolio figcaption::after {
     top: 30px;
     right: 50px;
     bottom: 30px;
-    left: 50px;
+    left: 30px;
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     -webkit-transform: scale(1,0);
@@ -566,14 +566,14 @@ figure.effect-portfolio:hover img {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
 }
-@media screen and (max-width: 69.5em) { 
+/* @media screen and (max-width: 69.5em) {
     .grid figure { width: 50% }
     .grid figure figcaption { font-size: 120% }
 }
 @media screen and (max-width: 41.5em) { 
     .grid figure { width: 100% }
 }
-
+ */
 
 .carousel-control.right span.fa, .carousel-control.left span.fa {
     border: 1px solid #fff;
