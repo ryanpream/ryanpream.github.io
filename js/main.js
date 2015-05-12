@@ -15,7 +15,7 @@ function main() {
 
     // Header carousel slider
       $('#banner').carousel({
-        interval: 7000
+        interval: 50000
       });
     
     // Header/Vision carousel slider
