@@ -8,7 +8,7 @@ Date Created: August 10, 2014
 Updated: Feb. 13, 2015
 =======================*/
 /* MAX 1080px */
-@media (max-width: 1080px) { 
+@media (max-width: 2000px) {
     h1 { font-size: 5em }
     .carousel-control.right img,
     .carousel-control.left img { width: 50px }

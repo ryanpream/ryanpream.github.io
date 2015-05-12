@@ -401,6 +401,7 @@ opacity: .9;
     width: 100%;
     list-style: none;
     text-align: center;
+    background: #e8e8e8;
 }
 /* Common style */
 .grid figure {
@@ -408,10 +409,9 @@ opacity: .9;
     z-index: 1;
     display: inline-block;
     overflow: hidden;
-    margin: -0.20em;
-    width: 33.433%;
+    margin: 0.2em;
+    /* width: 33%; */
     height: 400px;
-    background: #3085a3;
     text-align: center;
     cursor: pointer;
 }
