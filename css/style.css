@@ -100,14 +100,7 @@ h6 {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-weight: 700;
 }
-h1 {
-    text-transform: uppercase;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 76px;
-    letter-spacing: 5px;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased !important;
-}
+
 h2 {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 30px;
@@ -126,15 +119,7 @@ h4 {
     line-height: 20px;
     margin-bottom: -10px;
 }
-h5 {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 5px;
-    word-spacing: 10px;
-    -webkit-font-smoothing: antialiased !important;
-    text-transform: none;
-}
+
 h6 {
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-size: 10px;
@@ -142,12 +127,7 @@ h6 {
     -webkit-font-smoothing: antialiased !important;
     text-transform: none;
 }
-hr {
-    height: 5px;
-    border-top: 5px solid #ffffff;
-    width: 90%;
-    margin: 0 auto;
-}
+
 /**************************
 ******** Preloader ********
 **************************/
@@ -260,12 +240,7 @@ hr {
 .carousel#banner {
     background: #000000;
 }
-.carousel-caption {
-    padding-bottom: 30px;
-    top: 30%;
-    left: 0;
-    right: 0;
-}
+
 .carousel-fade .item {
     -webkit-transition: opacity 2s;
     -moz-transition: opacity 2s;
@@ -330,17 +305,6 @@ hr {
 ***** Vision/Mission ******
 **************************/
 
-.carousel;indicators {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
-}
 .carousel-indicators li {
     display: inline-block;
     width: 30px;
@@ -465,18 +429,7 @@ hr {
     font-size: 0;
     opacity: 0;
 }
-.grid figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300;
-}
-.grid figure h2 span { font-weight: 800 }
-.grid figure h2,
-.grid figure p { margin: 0 }
-.grid figure p {
-    letter-spacing: 1px;
-    font-size: 100%;
-    margin-top: 40px;
-}
+
 /**************************
 **** Portfolio Effects ****
 **************************/
@@ -517,18 +470,7 @@ figure.effect-portfolio figcaption::after {
     -webkit-transform-origin: 100% 0;
     transform-origin: 100% 0;
 }
-figure.effect-portfolio h2 {
-    padding-top: 26%;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-}
-figure.effect-portfolio p {
-    padding: 0.5em 2em;
-    text-transform: none;
-    opacity: 0;
-    -webkit-transform: translate3d(0,-10px,0);
-    transform: translate3d(0,-10px,0);
-}
+
 figure.effect-portfolio img,
 figure.effect-portfolio h2 {
     -webkit-transform: translate3d(0,-30px,0);
@@ -552,13 +494,7 @@ figure.effect-portfolio:hover figcaption::after {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-figure.effect-portfolio:hover h2,
-figure.effect-portfolio:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-figure.effect-portfolio:hover h2 { color: #fed136 }
+
 figure.effect-portfolio:hover figcaption::after,
 figure.effect-portfolio:hover h2,
 figure.effect-portfolio:hover p,
@@ -582,10 +518,7 @@ figure.effect-portfolio:hover img {
     border-radius: 50%;
     padding: 2px 15px;
 }
-.carousel-control.right span.fa:hover,
-.carousel-control.left span.fa:hover{
-    border: 1px solid #FFBE00;
-}
+
 
 /**************************
 ***** Call-to-action ******
@@ -652,10 +585,7 @@ figure.effect-portfolio:hover img {
     padding-top: 15%;
     padding-bottom: 5%;
 }
-#about-parallax .about-content {
-    padding-top: 12%;
-    padding-bottom: 10%;
-}
+
 #about h2,
 .about-text{
     margin-top: 7%;
