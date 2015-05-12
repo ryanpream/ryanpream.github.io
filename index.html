@@ -70,7 +70,7 @@
 
       <div class="carousel-inner"><!-- Inner wrapper for slides -->
         <div class="item active"> <!-- First item slider -->
-          <img src="img/banner/RP-003-banner-800px.jpg"  width="1600" height = "900"/><!-- First item background image slider -->
+          <img src="img/banner/RP-003-banner-1600px.jpg"  width="1600" height = "900"/><!-- First item background image slider -->
         </div> <!-- End first item slider -->
 
         <div class="item"> <!-- Second item slider -->
@@ -330,14 +330,12 @@
                 $('#status').fadeOut(); // will first fade out the loading animation
                 $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
                 $('body').delay(350).css({'overflow':'visible'});
+                $('#banner').carousel({interval: 2000});
 
                 $.each( arrayImages, function(index,value){
-
                     var img = $('<img class="dynamic">');
                     img.attr('src', value);
-
                     img.prependTo('.thumbnail').hide().fadeIn(2000);
-
                 }); // each END
             }
          });
